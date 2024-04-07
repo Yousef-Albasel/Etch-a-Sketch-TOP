@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script>
+        // Import the functions you need from the SDKs you need
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBJ6RN1L2333yrk5kRfS3nCS0DKAN6w5VI",
+          authDomain: "etchasketch-20bdf.firebaseapp.com",
+          projectId: "etchasketch-20bdf",
+          storageBucket: "etchasketch-20bdf.appspot.com",
+          messagingSenderId: "936086242310",
+          appId: "1:936086242310:web:46e41ee6127827fa4b2f87"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>  
+</head>
+
+  <body onload="retrieveImageUrls()">
+    
+    <div class="header">
+      <h1>
+        <span class="title-word title-word-1">Etch</span>
+        <span class="title-word title-word-2">a</span>
+        <span class="title-word title-word-3">Sketch</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Section -->
+    <div class="gallery-container">
+        <div class="gallery">
+        
+        </div>
+    </div>
+    
+    <div class="footer" style="color: white; display: flex; justify-content: center;">
+        <p>Developed by<span class="underline--magical"> <a href="https://github.com/Yousef-Albasel" style="text-decoration: none; color: white;">@Yousef-Albasel</a></span> & For - TheOdinProject</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
